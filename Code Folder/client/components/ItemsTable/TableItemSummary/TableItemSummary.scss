@@ -1,0 +1,31 @@
+@import "../../../styles/vendor/bourbon/bourbon";
+
+:local {
+  $highlighted-color: #3276b3;
+
+  .rowClickable {
+    cursor: pointer;
+  }
+
+  .firstCell {
+    text-align: left !important;
+    position: relative;
+    @include display(flex);
+    @include align-items(center);
+    height: 45px;
+
+    i {
+      font-size: 28px;
+      @include flex-basis(30px);
+      height: 30px;
+      text-align: center;
+      margin-right: 20px;
+    }
+  }
+
+  .highlightedCell span {
+    color: $highlighted-color !important;
+    text-decoration: underline;
+    font-size: 17px;
+  }
+}

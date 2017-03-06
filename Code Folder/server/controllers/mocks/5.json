@@ -1,0 +1,27 @@
+[
+  {
+    "id": "Tenrox-R1_1234",
+    "state": "complete",
+    "u_tests": {
+      "status": "success",
+      "passed": 142,
+      "skipped": 10,
+      "failed": 0,
+      "coverage": 76
+    },
+    "f_tests": {
+      "status": "success",
+      "passed": 4321,
+      "skipped": 2145,
+      "failed": 0,
+      "coverage": 23
+    }
+  },
+  {
+    "id": "432462",
+    "metrics": {
+      "status": "in_progress",
+      "progress": 99
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "432462",
+    "metrics": {
+      "status": "success",
+      "test": { "value": 0, "rel": "=" },
+      "maintainability": { "value": 40, "rel": "=" },
+      "security": { "value": 100, "rel": "=" },
+      "workmanship": { "value": 100, "rel": "=" }
+    },
+    "build": {
+      "status": "in_progress",
+      "progress": 40
+    }
+  }
+]

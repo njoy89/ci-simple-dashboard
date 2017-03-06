@@ -1,0 +1,22 @@
+[
+  {
+    "id": "432462",
+    "metrics": {
+      "status": "in_progress",
+      "progress": 60
+    }
+  },
+  {
+    "id": "Tenrox-R1_1234",
+    "build": {
+      "status": "success",
+      "debug": true,
+      "release": true,
+      "timestamp": "2014-04-17T10:46:00+00:00"
+    },
+    "u_tests": {
+      "status": "in_progress",
+      "progress": 10
+    }
+  }
+]

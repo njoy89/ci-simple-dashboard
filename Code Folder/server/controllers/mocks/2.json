@@ -1,0 +1,32 @@
+[
+  {
+    "id": "432460",
+    "type": "firewall",
+    "owner": "samy",
+    "time_started": "2014-04-16T07:51:10+00:00",
+    "state": "rejected",
+    "metrics": {
+      "status": "failed",
+      "test": { "value": 64, "rel": "+" },
+      "maintainability": { "value": 53, "rel": "-" },
+      "security": { "value": 64, "rel": "=" },
+      "workmanship": { "value": 72, "rel": "=" }
+    },
+    "build": {
+      "status": "success",
+      "debug": true,
+      "release": true,
+      "timestamp": "2014-04-16T07:52:10+00:00"
+    },
+    "u_tests": {
+      "status": "failed",
+      "passed": 10,
+      "skipped": 3,
+      "failed": 2,
+      "coverage": 30
+    },
+    "f_tests": {
+      "status": "skipped"
+    }
+  }
+]

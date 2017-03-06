@@ -1,0 +1,12 @@
+@import '../../../styles/vendor/bourbon/bourbon';
+
+:local {
+  .row {
+    @include display(flex);
+    @include align-items(center);
+  }
+
+  .detailsPanelTd {
+    padding: 0 !important;
+  }
+}

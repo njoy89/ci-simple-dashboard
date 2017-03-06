@@ -1,0 +1,26 @@
+[
+  {
+    "id": "432462",
+    "state": "accepted",
+    "build": {
+      "status": "success",
+      "debug": true,
+      "release": true,
+      "timestamp": "2014-04-18T12:20:00+00:00"
+    },
+    "u_tests": {
+      "status": "success",
+      "passed": 0,
+      "skipped": 0,
+      "failed": 0,
+      "coverage": 0
+    },
+    "f_tests": {
+      "status": "success",
+      "passed": 0,
+      "skipped": 0,
+      "failed": 0,
+      "coverage": 0
+    }
+  }
+]

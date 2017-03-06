@@ -1,0 +1,99 @@
+[
+  {
+    "id": "Tenrox-R1_1235",
+    "type": "build",
+    "owner": null,
+    "time_started": null,
+    "state": "pending",
+    "metrics": {
+      "status": "in_progress"
+    },
+    "build": {
+      "status": "in_progress"
+    },
+    "u_tests": {
+      "status": "in_progress"
+    },
+    "f_tests": {
+      "status": "in_progress"
+    }
+  },
+  {
+    "id": "432462",
+    "type": "firewall",
+    "owner": "jtuck",
+    "time_started": "2014-04-18T12:12:12+00:00",
+    "state": "running",
+    "metrics": {
+      "status": "in_progress",
+      "progress": 12
+    },
+    "build": {
+      "status": "in_progress"
+    },
+    "u_tests": {
+      "status": "in_progress"
+    },
+    "f_tests": {
+      "status": "in_progress"
+    }
+  },
+  {
+    "id": "432461",
+    "type": "firewall",
+    "owner": "samy",
+    "time_started": "2014-04-18T10:53:12+00:00",
+    "state": "rejected",
+    "metrics": {
+      "status": "failed",
+      "test": { "value": 64, "rel": "+" },
+      "maintainability": { "value": 53, "rel": "+" },
+      "security": { "value": 60, "rel": "-" },
+      "workmanship": { "value": 72, "rel": "=" }
+    },
+    "build": {
+      "status": "success",
+      "debug": true,
+      "release": true,
+      "timestamp": "2014-04-17T10:46:00+00:00"
+    },
+    "u_tests": {
+      "status": "success",
+      "passed": 142,
+      "skipped": 10,
+      "failed": 0,
+      "coverage": 76
+    },
+    "f_tests": {
+      "status": "success",
+      "passed": 4321,
+      "skipped": 2145,
+      "failed": 0,
+      "coverage": 23
+    }
+  },
+  {
+    "id": "Tenrox-R1_1234",
+    "type": "build",
+    "owner": "samy",
+    "time_started": "2014-04-17T09:42:10+00:00",
+    "state": "running",
+    "metrics": {
+      "status": "success",
+      "test": { "value": 64, "rel": "+" },
+      "maintainability": { "value": 53, "rel": "+" },
+      "security": { "value": 64, "rel": "=" },
+      "workmanship": { "value": 72, "rel": "=" }
+    },
+    "build": {
+      "status": "in_progress",
+      "progress": 50
+    },
+    "u_tests": {
+      "status": "in_progress"
+    },
+    "f_tests": {
+      "status": "in_progress"
+    }
+  }
+]

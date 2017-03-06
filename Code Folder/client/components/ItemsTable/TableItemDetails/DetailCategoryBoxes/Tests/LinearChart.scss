@@ -1,0 +1,50 @@
+@import '../../../../../styles/colors';
+
+:local {
+  $color-good-coverage: #2f4d21;
+  $color-avg-coverage: #7a3310;
+
+  $color-chart-bg-uncovered: #f6cbae;
+  $color-chart-bg-covered: #c6dfb5;
+
+  .linearChart {
+    padding: 0 10px 5px 10px;
+    position: relative;
+  }
+
+  .outerChart {
+    height: 30px;
+    width: 100%;
+    background-color: $color-chart-bg-uncovered;
+  }
+
+  .innerChart {
+    height: 30px;
+    background-color: $color-chart-bg-covered;
+  }
+
+  .text {
+    font-weight: 700;
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
+
+    &Good {
+      color: $color-good-coverage;
+    }
+    &Avg {
+      color: $color-avg-coverage;
+    }
+  }
+
+  .smallText {
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+    color: $color-black;
+  }
+}

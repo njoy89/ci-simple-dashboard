@@ -1,0 +1,40 @@
+@import '../../../../../styles/vendor/bourbon/bourbon';
+@import '../../../../../styles/colors';
+
+:local {
+  .box {
+    height: 100%;
+    @include display(flex);
+    @include flex-direction(column);
+  }
+
+  .header {
+    font-weight: 500;
+    text-align: left;
+    padding: 5px 0 0 10px;
+  }
+
+  .buildStatuses {
+    @include flex(1);
+    @include display(flex);
+    @include align-items(center);
+  }
+
+  .buildStatus {
+    @include flex(1);
+    color: $color-failure;
+
+    i {
+      font-size: 65px;
+    }
+
+    &Success {
+      color: $color-success;
+    }
+  }
+
+  .footer {
+    font-size: 13px;
+    color: $color-black;
+  }
+}

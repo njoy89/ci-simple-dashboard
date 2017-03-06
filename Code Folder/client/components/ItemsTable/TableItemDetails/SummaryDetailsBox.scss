@@ -1,0 +1,145 @@
+@import '../../../styles/vendor/bourbon/bourbon';
+@import "../../../styles/colors";
+
+:local {
+    $color-accepted-text: #fcc02f;
+    $color-rejected-text: #c21c25;
+    $color-complete-text: #2c4a18;
+
+    .boxWrapper {
+        @include flex(1);
+        padding: 0 15px;
+        height: 200px;
+    }
+
+    .header {
+        color: $color-black;
+    }
+
+    .content {
+        @include flex(1);
+        padding: 5px 0;
+
+        @include display(flex);
+        @include flex-direction(column);
+    }
+
+    .box {
+        @include display(flex);
+        @include flex-direction(column);
+        height: 100%;
+    }
+
+    .boxAccepted {
+        @extend .box;
+
+        &Content {
+            @include flex(1);
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(center);
+            color: $color-accepted-text;
+        }
+
+        &Footer {
+            margin-bottom: 15px;
+        }
+
+        &SmallText {
+            font-size: 14px;
+        }
+
+        &BigText {
+            font-size: 32px;
+            position: relative;
+            top: -6px;
+        }
+    }
+
+    .boxComplete {
+        @extend .box;
+
+        &Content {
+            @include flex(1);
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(center);
+            color: $color-complete-text;
+        }
+
+        &Footer {
+            @include display(flex);
+            @include align-items(center);
+            @include flex-wrap(wrap);
+            @include justify-content(center);
+
+            & > button {
+                @include flex-basis(70%);
+            }
+
+            & > span {
+                @include flex-basis(30%);
+            }
+
+            & > select {
+                @include flex-basis(70%);
+            }
+
+            & > * {
+                margin-bottom: 10px;
+            }
+        }
+
+        &BigText {
+            font-size: 32px;
+            position: relative;
+            top: -6px;
+        }
+    }
+
+    .boxRejected {
+        @extend .box;
+
+        &Content {
+            @include flex(1);
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(center);
+            color: $color-rejected-text;
+        }
+
+        &Footer {
+            margin-bottom: 15px;
+        }
+
+        &SmallText {
+            font-size: 14px;
+        }
+
+        &BigText {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+
+    .boxFailed {
+        @extend .box;
+
+        &Content {
+            @include flex(1);
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(center);
+            color: $color-rejected-text;
+        }
+
+        &Footer {
+            margin-bottom: 15px;
+        }
+
+        &BigText {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+}

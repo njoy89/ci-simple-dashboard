@@ -1,0 +1,29 @@
+@import "../styles/vendor/bourbon/bourbon";
+@import "../styles/colors";
+
+:local {
+  .panel {
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+    @include display(flex);
+    @include align-items(center);
+  }
+
+  .loadingMessage {
+    @include flex(1);
+    margin-left: 10px;
+    color: darken($color-light-grey, 10%);
+  }
+
+  .errorMessage {
+    @include flex(1);
+    color: $color-failure;
+    font-size: 16px;
+
+    i {
+      margin-right: 5px;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+:local {
+  .header {
+    th {
+      vertical-align: bottom;
+      padding: 8px;
+      line-height: 1.42857;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &CategoryColumn {
+      min-width: 100px;
+    }
+  }
+
+  .firstColumn {
+    width: 250px;
+  }
+}

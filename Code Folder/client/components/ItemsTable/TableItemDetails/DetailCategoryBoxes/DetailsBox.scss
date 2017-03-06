@@ -1,0 +1,72 @@
+@import '../../../../styles/vendor/bourbon/bourbon';
+@import '../../../../styles/colors';
+
+$box-border-color: #cbcccd;
+$side-length: 200px;
+
+:local {
+  .boxWrapper {
+    @include flex(1);
+    padding: 30px 15px;
+  }
+
+  .box {
+    height: $side-length;
+    cursor: pointer;
+  }
+
+  .boxInProgress {
+    @extend .box;
+    color: $category-in-progress;
+    border: 2px solid $category-in-progress;
+
+    background-color: $color-blue-gradient;
+    @include background-image(linear-gradient(0deg, $color-white, $color-blue-gradient 60%));
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+
+    position: relative;
+
+    .progressNumber {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+    }
+  }
+
+  .boxSuccess {
+    @extend .box;
+    border: 3px solid $category-success;
+    color: $category-success;
+    box-shadow: 3px 3px 6px 0 rgba($color-black, 0.4);
+    background-color: $color-green-gradient;
+    @include background-image(linear-gradient(0deg, $color-white, $color-green-gradient 50%));
+  }
+
+  .boxFailed {
+    @extend .box;
+    border: 2px solid $category-failed;
+    color: $category-failed;
+    background-color: $color-red-gradient;
+    @include background-image(linear-gradient(0deg, $color-white, $color-red-gradient 60%));
+  }
+
+  .boxSkipped {
+    @extend .box;
+    border: 2px solid $box-border-color;
+    color: $category-skipped;
+
+    background-color: $category-skipped;
+    @include background-image(linear-gradient(0deg, $color-white, $color-grey-gradient 60%));
+
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+
+    &Content {
+      color: $color-grey;
+    }
+  }
+}

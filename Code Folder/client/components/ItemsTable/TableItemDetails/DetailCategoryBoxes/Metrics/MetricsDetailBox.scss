@@ -1,0 +1,74 @@
+@import '../../../../../styles/vendor/bourbon/bourbon';
+@import '../../../../../styles/colors';
+
+:local {
+  $color-metrics-arrow-up: #548039;
+  $color-metrics-arrow-eq: #fed86e;
+  $color-metrics-arrow-down: #be0712;
+
+  .box {
+    @include display(flex);
+    @include flex-direction(column);
+  }
+
+  .header {
+    font-weight: 500;
+    text-align: left;
+    padding: 5px 0 0 10px;
+  }
+
+  .stats {
+    @include display(flex);
+    @include flex-wrap(wrap);
+  }
+
+  .statBox {
+    @include flex-basis(50%);
+    height: 79px;
+    @include display(flex);
+    @include flex-direction(column);
+  }
+
+  .statBoxArrow {
+    position: relative;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex(1);
+
+    &Up {
+      color: $color-metrics-arrow-up;
+    }
+
+    &Eq {
+      color: $color-metrics-arrow-eq;
+    }
+
+    &Down {
+      color: $color-metrics-arrow-down;
+    }
+
+    span {
+      font-size: 26px;
+      font-weight: 500;
+      color: $color-black;
+      z-index: 2;
+    }
+
+    & > i {
+      position: absolute;
+      top: 50%;
+      margin-left: -31px;
+      margin-top: -31px;
+      left: 50%;
+      font-size: 64px;
+      width: 64px;
+    }
+  }
+
+  .statBoxName {
+    color: $color-black;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+}

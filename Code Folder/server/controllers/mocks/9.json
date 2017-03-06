@@ -1,0 +1,25 @@
+[
+  {
+    "id": "Tenrox-R1_1235",
+    "state": "failed",
+    "metrics": {
+      "status": "success",
+      "test": { "value": 64, "rel": "+" },
+      "maintainability": { "value": 53, "rel": "+" },
+      "security": { "value": 64, "rel": "=" },
+      "workmanship": { "value": 72, "rel": "=" }
+    },
+    "build": {
+      "status": "failed",
+      "debug": true,
+      "release": false,
+      "timestamp": "2014-04-18T14:22:00+00:00"
+    },
+    "u_tests": {
+      "status": "skipped"
+    },
+    "f_tests": {
+      "status": "skipped"
+    }
+  }
+]

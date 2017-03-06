@@ -1,0 +1,36 @@
+[
+  {
+    "id": "Tenrox-R1_1236",
+    "type": "build",
+    "owner": null,
+    "time_started": "2014-04-18T14:30:00+00:00",
+    "state": "failed",
+    "metrics": {
+      "status": "success",
+      "test": { "value": 64, "rel": "+" },
+      "maintainability": { "value": 53, "rel": "+" },
+      "security": { "value": 64, "rel": "=" },
+      "workmanship": { "value": 72, "rel": "=" }
+    },
+    "build": {
+      "status": "success",
+      "debug": true,
+      "release": true,
+      "timestamp": "2014-04-18T14:32:00+00:00"
+    },
+    "u_tests": {
+      "status": "failed",
+      "passed": 142,
+      "skipped": 10,
+      "failed": 5,
+      "coverage": 76
+    },
+    "f_tests": {
+      "status": "failed",
+      "passed": 4321,
+      "skipped": 2145,
+      "failed": 1005,
+      "coverage": 23
+    }
+  }
+]
