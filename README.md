@@ -1,4 +1,4 @@
-=== Used technologies & libraries ===
+# Used technologies & libraries
 
 The solution employs ReactJS + redux. I used the following libraries:
 
@@ -19,13 +19,13 @@ The solution employs ReactJS + redux. I used the following libraries:
 - babel - a transpiler for a new JavaScript (ES6)
 - chai, mocha, enzyme, sinon - utils used for unit testing
 
-=== Pulling items data ===
+# Pulling items data
 
 The UI fetches items data every 3 seconds (network latency is simulated: 1 second length).
 All consecutive responses are situated in ./server/controllers/mocks/*.json. There are 10 defined responses
 (10 json files), which means that the UI will be receiving new data for 40 second from the first launch.
 
-=== Comments ===
+# Comments
 
 1. I didn't take icons (a desktop icon, a building icon) from the mockups, because I wanted to have the icons being
    scalable. In the professional life, I would ask a product designer / graphic designer for scalable files like
@@ -40,7 +40,7 @@ All consecutive responses are situated in ./server/controllers/mocks/*.json. The
    tests, red to failed tests.
 6. ... the project was fun, time-consuming though :) Looking forward to hearing back from you!
 
-=== Development ===
+# Development
 
 `cd Code\ Folder/`
 `npm install`
@@ -48,27 +48,31 @@ All consecutive responses are situated in ./server/controllers/mocks/*.json. The
 `npm run webpack-server`
 `navigate to http://localhost:3000/`
 
-=== Production, project presentation ===
+# Production, project presentation
 
 `cd Code\ Folder/`
 `npm install`
 `npm run prod-server`
 `navigate to http://localhost:3000/`
 
-=== Preparing production bundle ===
+# Preparing production bundle
 
 `cd Code\ Folder/`
 `npm install`
 `npm run build`
 and run the `prod-server` and check out the new code version on `http://localhost:3000/`.
 
-=== Running unit tests ===
+# Running unit tests
 
 `cd Code\ Folder/`
 `npm install`
 `npm run test`
 
-=== Video ===
+# Video
 
 The video was recorded by Nimbus Screenshot & Screen Video Recorder plugin for Chrome. The file is in *.webm format.
 You can check the shorter version out on https://nimbus.everhelper.me/client/notes/share/747424/1plw121bvd5ngouko12f.
+
+# Demo
+
+The project has been deployed on [AWS EC2 instance](http://ec2-35-167-218-181.us-west-2.compute.amazonaws.com:9001/).
