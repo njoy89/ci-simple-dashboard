@@ -75,4 +75,4 @@ You can check the shorter version out [here](https://nimbus.everhelper.me/client
 
 # Demo
 
-The project has been deployed on [AWS EC2 instance](http://ec2-35-167-218-181.us-west-2.compute.amazonaws.com:9001/).
+The project has been deployed on [AWS EC2 instance](http://ec2-35-167-218-181.us-west-2.compute.amazonaws.com/).
