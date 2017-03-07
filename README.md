@@ -42,36 +42,36 @@ All consecutive responses are situated in ./server/controllers/mocks/*.json. The
 
 # Development
 
-`cd Code\ Folder/`
-`npm install`
-`npm run dev-server`
-`npm run webpack-server`
-`navigate to http://localhost:3000/`
+1. `cd Code\ Folder/`
+2. `npm install`
+3. `npm run dev-server`
+4. `npm run webpack-server`
+5. `navigate to http://localhost:3000/`
 
 # Production, project presentation
 
-`cd Code\ Folder/`
-`npm install`
-`npm run prod-server`
-`navigate to http://localhost:3000/`
+1. `cd Code\ Folder/`
+2. `npm install`
+3. `npm run prod-server`
+4. `navigate to http://localhost:3000/`
 
 # Preparing production bundle
 
-`cd Code\ Folder/`
-`npm install`
-`npm run build`
-and run the `prod-server` and check out the new code version on `http://localhost:3000/`.
+1. `cd Code\ Folder/`
+2. `npm install`
+3. `npm run build`
+4. and run the `prod-server` and check out the new code version on `http://localhost:3000/`.
 
 # Running unit tests
 
-`cd Code\ Folder/`
-`npm install`
-`npm run test`
+1. `cd Code\ Folder/`
+2. `npm install`
+3. `npm run test`
 
 # Video
 
 The video was recorded by Nimbus Screenshot & Screen Video Recorder plugin for Chrome. The file is in *.webm format.
-You can check the shorter version out on https://nimbus.everhelper.me/client/notes/share/747424/1plw121bvd5ngouko12f.
+You can check the shorter version out [here](https://nimbus.everhelper.me/client/notes/share/747424/1plw121bvd5ngouko12f).
 
 # Demo
 
